@@ -61,13 +61,23 @@ project/
 - **Tipe:** [Tabular]  
 
 ### Fitur Utama
-Fitur,Deskripsi
-volatile acidity,Kadar asam volatil (terkait dengan rasa masam/busuk).
-alcohol,Persentase kandungan alkohol.
-sulphates,Kadar aditif sulfat.
-wine_type,Jenis anggur (Red/White).
-quality,"Target: 0 (Buruk), 1 (Normal), 2 (Baik)."
+### 📊 Statistik Deskriptif Dataset
 
+| Nama Fitur | Tipe Data | Deskripsi | Count | Mean (μ) | Std (σ) | Min | Max |
+|:---|:---:|:---|:---:|:---:|:---:|:---:|:---:|
+| **fixed acidity** | Float | Asam Tetap | 6497 | 7.215 | 1.296 | 3.8 | 15.9 |
+| **volatile acidity** | Float | Asam Volatil | 6497 | 0.339 | 0.165 | 0.08 | 1.58 |
+| **citric acid** | Float | Asam Sitrat | 6497 | 0.319 | 0.145 | 0.00 | 1.66 |
+| **residual sugar** | Float | Sisa Gula | 6497 | 5.443 | 4.758 | 0.6 | 65.8 |
+| **chlorides** | Float | Klorida | 6497 | 0.056 | 0.035 | 0.009 | 0.611 |
+| **free sulfur dioxide** | Float | SO2 Bebas (Anti-oksidan) | 6497 | 30.525 | 17.769 | 1.0 | 289.0 |
+| **total sulfur dioxide** | Float | SO2 Total (Stabilitas Anggur) | 6497 | 115.744 | 56.521 | 6.0 | 440.0 |
+| **density** | Float | Kepadatan (Gula & Alkohol) | 6497 | 0.99469 | 0.003 | 0.98711 | 1.03898 |
+| **pH** | Float | Tingkat Keasaman | 6497 | 3.218 | 0.161 | 2.72 | 4.01 |
+| **sulphates** | Float | Sulfat | 6497 | 0.531 | 0.149 | 0.22 | 2.00 |
+| **alcohol** | Float | Kadar Alkohol (%) | 6497 | 10.492 | 1.192 | 8.0 | 14.9 |
+| **quality (TARGET)** | Integer | Skor Kualitas (Skala 3-9) | 6497 | 5.818 | 0.873 | 3 | 9 |
+| **wine_type** | Biner | Jenis (Putih=0, Merah=1) | 6497 | 0.753 | 0.431 | 0 | 1 |
 ---
 
 # 4. 🔧 Data Preparation
