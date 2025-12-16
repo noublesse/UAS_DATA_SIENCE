@@ -72,11 +72,15 @@ quality,"Target: 0 (Buruk), 1 (Normal), 2 (Baik)."
 
 # 4. 🔧 Data Preparation
 Cleaning: Penanganan missing values dan capping outliers menggunakan metode IQR.
+
 Transformasi: Target quality diubah menjadi 3 kelas (quality_class: 0, 1, 2). 2. Fitur wine_type: Menambahkan fitur biner (0=Merah, 1=Putih).
 Untuk Mengatasi ketidakseimbangan kelas. Dan  memungkinkan model membedakan pola fisikokimia antara dua jenis anggur.
 Disini saya Menggunakan pd.cut() dengan bins [0, 4, 6, 10]. Lalu Kolom wine_type dibuat saat integrasi data.
+
 Splitting: Pembagian data menjadi 80% Train dan 20% Test (dengan Validation set untuk MLP).
+
 Imbalance Handling: Penghitungan Class Weights secara otomatis untuk menyeimbangkan perhatian model pada kelas minoritas.
+
 ---
 
 # 5. 🤖 Modeling
