@@ -10,9 +10,13 @@
 
 # 1. 🎯 Ringkasan Proyek
 Domain: Industri Minuman (Kontrol Kualitas Anggur).
+
 Data Preparation: Penggabungan dataset Red & White Wine, penanganan missing values, outlier capping, dan class weighting.
+
 Model: Membangun 3 model yaitu Logistic Regression (Baseline), LightGBM (Advanced), dan Multi-Layer Perceptron (Deep Learning).
+
 Hasil: Menangani trade-off antara Akurasi Global dan deteksi kelas minoritas (Recall).
+
 ---
 
 # 2. 📄 Problem & Goals
