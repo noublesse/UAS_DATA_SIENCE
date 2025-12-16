@@ -128,4 +128,21 @@ Insight penting: Penggabungan dataset merah dan putih meningkatkan kompleksitas 
 
 # 9. 🔁 Reproducibility
 Gunakan environment:
-Library Utama: scikit-learn==1.3.0, lightgbm==4.0.0, tensorflow==2.14.0.
+numpy==1.24.3
+pandas==2.0.3
+scikit-learn==1.3.0
+matplotlib==3.7.2
+seaborn==0.12.2
+
+# Deep Learning Framework (pilih salah satu)
+tensorflow==2.14.0  # atau
+torch==2.1.0        # PyTorch
+
+# Additional libraries (sesuaikan)
+xgboost==1.7.6
+lightgbm==4.0.0
+opencv-python==4.8.0  # untuk computer vision
+nltk==3.8.1           # untuk NLP
+transformers==4.30.0  # untuk BERT, dll
+
+
