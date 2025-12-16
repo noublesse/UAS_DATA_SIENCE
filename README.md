@@ -32,26 +32,49 @@ Membangun model Machine Learning (termasuk Deep Learning) untuk klasifikasi kual
 ---
 ## 📁 Struktur Folder
 ```
+## 📁 Struktur Direktori Proyek
+
+```text
 project/
 │
-├── data/                   # Dataset (tidak di-commit, download manual)
+├── data/
+│   ├── wine+quality/              # Folder sumber dataset
+│   ├── winequality-red.csv        # Dataset anggur merah
+│   ├── winequality-white.csv      # Dataset anggur putih
+│   ├── winequality.names          # Dokumentasi dataset
+│   └── .gitkeep
 │
-├── notebooks/              # Jupyter notebooks
-│   └── ML_Project.ipynb
+├── images/                        # Hasil visualisasi dan plot
+│   ├── Bar plot.png
+│   ├── Boxplot.png
+│   ├── Headmap.png
+│   ├── Time series.png
+│   ├── plotting bars.png
+│   └── .gitkeep
 │
-├── src/                    # Source code
-│   
-├── models/                 # Saved models
-│   ├── model_baseline.pkl
-│   ├── model_rf.pkl
-│   └── model_cnn.h5
+├── models/                        # File model yang sudah dilatih (Saved Models)
+│   ├── model_baseline_lr.pkl      # Logistic Regression (Model 1)
+│   ├── model_advanced_lgbm.pkl    # LightGBM (Model 2)
+│   ├── model_deep_learning_mlp.h5 # Deep Learning MLP (Model 3)
+│   └── .gitkeep
 │
-├── images/                 # Visualizations
-│   └── r
+├── notebooks/                     # File utama eksperimen
+│   ├── uas.ipynb                  # Jupyter Notebook utama
+│   └── .gitkeep
 │
-├── requirements.txt        # Dependencies
-├── .gitignore
-└── README.md
+├── src/                           # Modul kode Python (Script)
+│   ├── Data_cleaning.py           # Script pembersihan data
+│   ├── Informasi_dataset.py       # Script statistik deskriptif
+│   ├── Modeling.py                # Script algoritma model
+│   ├── visualisasi.py             # Script fungsi plotting
+│   └── .gitkeep
+│
+├── .gitignore                     
+├── Cheklist Submit.md             
+├── LICENSE                        
+├── Laporan Proyek Machine Learning.md  
+├── Laporan_DataScience.pdf       
+└── requirements.txt              
 ```
 ---
 
