@@ -1,0 +1,35 @@
+# --- Python General ---
+# File cache python (tidak perlu diupload)
+__pycache__/
+*.pyc
+
+# --- Jupyter Notebook ---
+# Folder autosave jupyter (sampah)
+.ipynb_checkpoints/
+
+# --- Virtual Environment ---
+# Folder environment python (sangat besar & spesifik per komputer)
+venv/
+env/
+.env
+
+# --- Dataset (PENTING!) ---
+# Kita ignore semua isi folder data/ agar dataset besar tidak terupload
+data/*
+# TAPI, kita tetap upload file .gitkeep agar folder data/ tetap ada strukturnya di GitHub
+!data/.gitkeep
+
+# Ignore file dataset spesifik jika ada di root
+*.csv
+*.xlsx
+*.json
+*.zip
+*.tar.gz
+
+# --- System Files ---
+# File sampah dari Mac/Windows
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
